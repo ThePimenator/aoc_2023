@@ -1,4 +1,3 @@
-# writing to file
 from curses.ascii import isdigit
 
 
@@ -6,7 +5,6 @@ input = open('input.txt', 'r')
 inputLines = input.readlines()
 
 sum = 0
-# Strips the newline character
 for line in inputLines:
 
     for i in line:
