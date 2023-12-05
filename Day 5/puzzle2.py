@@ -98,8 +98,9 @@ for s in steps:
             next_seeds.append(r)
     seeds = next_seeds
 
-print(min([s for s[0] in seeds]))
-
+for s in seeds:
+    if s[0] < 100000000:
+        print(s[0])
 
         
 
