@@ -13,22 +13,6 @@ print(len(inputLines[0]))
 Q = queue.PriorityQueue()
 Q.put((0,(0,1), set()))
 
-
-# def solve(l, y,x visited):
-#     print(l, y,x, visited, inputLines[y][x])
-#     assert len(visited) == l
-#     if y == 140 and x == 139:
-#         print(l)
-#         print(len(visited))
-#         if l > 1000:
-#             for v in visited: 
-#                 inputLines[v[0]][v[1]] = "O"
-#             for i in inputLines:
-#                 output.write("".join(i) + "\n")
-    
-
-
-
 while not Q.empty():
     l, coord, visited = Q.get()
     y,x = coord
